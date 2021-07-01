@@ -12,7 +12,8 @@ public class BasicApplicationTests {
 
 	@Test
 	public void contextLoads() {
-	}
 	String mensaje = "Este es un mensaje de prueba desde springboot";
     Assert.assertNotNull(mensaje);
+	}
+	
 }
