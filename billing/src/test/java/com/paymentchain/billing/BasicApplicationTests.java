@@ -43,6 +43,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ExtendWith(SpringExtension.class)//junit5 suport extension interface hrough which classes can integrate with the JUnit test.
 @AutoConfigureMockMvc/*allow test only http incoming request layer without start the serve, 
         but starting the full spring application context*/
+
 public class BasicApplicationTests {
   
     @Autowired
@@ -104,5 +105,6 @@ public class BasicApplicationTests {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.invoiceId").value(1));
     }
 
-    
+   
 }
+
